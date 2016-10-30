@@ -7,7 +7,7 @@ script: /bin/true
 after_success:
   - ls -la
   - git status
-  - git add *
+  - git add target
   - git commit -m "commit"
   - git remote set-url origin https://revo:01120266849ASHra@revo-web.scm.azurewebsites.net:443/revo-web.git
   - git push origin master --force
