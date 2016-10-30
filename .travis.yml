@@ -9,5 +9,5 @@ after_success:
   - git status
   - git add *
   - git commit -m "commit"
-  - git remote add origin https://revo:01120266849ASHra@revo-web.scm.azurewebsites.net:443/revo-web.git
+  - git remote set-url origin https://revo:01120266849ASHra@revo-web.scm.azurewebsites.net:443/revo-web.git
   - git push origin master
