@@ -5,10 +5,11 @@ install:
 - ./mvnw clean install -DskipTests=true
 script: /bin/true
 after_success:
+  - cd target/
   - ls -la
-  - git status
+  - git init
   - git add *
   - git ls-files
   - git commit -m "commit"
   - git remote set-url origin https://revo:01120266849ASHra@revo-web.scm.azurewebsites.net:443/revo-web.git
-  - git push  master --force
+  - git push origin master --force
