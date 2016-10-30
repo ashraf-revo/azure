@@ -4,8 +4,6 @@ jdk:
 install:
 - ./mvnw clean install -DskipTests=true
 script: /bin/true
-deploy:
-  provider: azure_web_apps
-  username: azure_deployment_user
-  password: azure_deployment_password
-  site: azure_deployment_sitename
+after_success:
+  - ls -l
+  - git status
