@@ -5,5 +5,5 @@ install:
 - ./mvnw clean install -DskipTests=true
 script: /bin/true
 after_success:
-  - ls -l
+  - ls -la
   - git status
