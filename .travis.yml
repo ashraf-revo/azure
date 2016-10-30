@@ -5,5 +5,5 @@ install:
 - ./mvnw clean install -DskipTests=true
 script: /bin/true
 deploy:
-  provider: https://revo@revo-web.scm.azurewebsites.net:443/revo-web.git
-  username: 01120266849ASHra
+  provider: azure_web_apps
+  password: azure_deployment_password
