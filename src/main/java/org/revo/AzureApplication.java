@@ -16,6 +16,6 @@ public class AzureApplication {
 class web{
 	@GetMapping
 	public String index(){
-		return "hello azure";
+		return "hello   azure";
 	}
 }
