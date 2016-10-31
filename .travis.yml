@@ -8,7 +8,6 @@ after_success:
   - git config --global user.email "revo"
   - git config --global user.name "01120266849ASHra"
   - cd target/
-  - ls -la
   - git init
   - git add *
   - git ls-files
